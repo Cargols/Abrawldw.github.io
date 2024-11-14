@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="HandheldFriendly" content="true">
+  <title>Brawl-Dw</title>
+  <link rel="icon" type="image/jpg" href="./Imatges/BRAWL.jpg">
+  <link rel="stylesheet" type="text/css" href="./ESTILS/ESTILS_DW.css">
+</head>
+<body class="INICIO">
+  
+<!-- Pantalla de carga -->
+  <script> 
+    window.addEventListener('DOMContentLoaded', function() {
+  const pantallaCarga = document.getElementById('pantalla-carga');
+  const contenidoPagina = document.getElementById('contenido-pagina');
+
+  setTimeout(function() {
+    pantallaCarga.style.display = 'none';
+    contenidoPagina.style.display = 'block';
+  }, 500); // Ajustar el tiempo de espera según la velocidad de carga de su página
+});
+  </script>
+  
+  <div id="pantalla-carga">
+    <div class="contenedor-carga">
+      <div class="animacion-carga"></div>
+      <p>Carregant...</p>
+    </div>
+  </div>
+
+  <div id="contenido-pagina">
+    </div>
+
+
+  <header class="Brawl">
+   <div class="Caja">
+    <h1>Brawl Stars</h1>
+    <img class="Dentro_img" src="./Imatges/BRAWL.jpg" alt="Logo del juego">
+  </div>
+  <nav>
+    <ul>
+      <li><a href="./HTML/Inici.html" target="display-frame" >Inici</a></li>
+      <li><a href="./HTML/Brawltalks.html"  target="display-frame">Brawltalks</a></li>
+      <li><a href="./HTML/Supercell.html" target="display-frame">Supercell </a></li>
+      <li><a href="./HTML/Modes_Joc.html" target="display-frame">Modes de Jocs</a></li>
+     
+      <li><a href="./HTML/Contactes.html" target="display-frame">Contactes</a></li>
+
+  </ul>
+  </nav>
+</header>
+<main>
+  <iframe class="ENSEÑAR" name="display-frame"  id="display-frame"></iframe>
+  <aside class="Barra">  <!-- Anunci -->
+    <div class="gallery-image"><img src="./Imatges/Anunci_1.jpg" alt="Imagen 1"></div>
+    <div class="gallery-image"><img src="./Imatges/Anunci2.jpg" alt="Imagen 2"></div>
+    <div class="gallery-image"><img src="./Imatges/Anunci_3.jpg" alt="Imagen 3"></div> 
+  </aside>
+</main>
+<footer>
+   <a href="https://www.youtube.com/@BrawlStars">
+    <img class="img_Defi" src="./Imatges/images-removebg-preview(3).png" alt="Image description">
+  </a>
+  <a href="https://www.tiktok.com/@brawlstars"> 
+  <img  class="img_Defi"src="./Imatges/images-removebg-preview(4).png">
+</a>
+</footer>
+</body>
+</html>
